@@ -1,1 +1,7 @@
-_build
+.buildkite/
+_build/
+tmp/
+.dockerignore
+Dockerfile
+docker-build.sh
+docker-compose.yaml

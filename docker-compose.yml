@@ -1,0 +1,11 @@
+version: '3'
+services:
+  validator:
+    image: validator:latest
+    stdin_open: true
+    tty: true
+    ports:
+      - '2154:2154'
+    volumes:
+      - ./tmp/validator/data:/var/data/miner:delegated
+      - ./tmp/validator/log:/var/log/miner:delegated
